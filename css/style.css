@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 78px;
+}
+
+.components-left,
+.components-right-top,
+.components-right-bottom {
+  background-color: #222;
+  border-radius: 16px;
+}
+
+.components-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 356px;
+  position: relative;
+}
+.components-left .exit-btn {
+  position: absolute;
+  background: transparent;
+  right: 20px;
+  top: 20px;
+  border: none;
+  cursor: pointer;
+}
+.components-left .salutations {
+  margin-top: 50px;
+  font-size: 16px;
+  width: 286px;
+}
+.components-left .salutations br {
+  margin-bottom: 18px;
+}
+.components-left .chat-form {
+  width: 286px;
+  margin-top: 29px;
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 37px;
+}
+.components-left .chat-form .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.components-left .chat-form .input-container label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.components-left .chat-form .input-container input,
+.components-left .chat-form .input-container textarea {
+  background: transparent;
+  border: 1px solid #525252;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  padding: 16px;
+}
+.components-left .chat-form .input-container textarea {
+  background-color: transparent;
+}
+.components-left .chat-form button {
+  background-color: #5b73d8;
+  color: inherit;
+  font-size: 18px;
+  padding: 17px;
+}
+
+.components-right-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 31px;
+  margin-bottom: 55px;
+  width: 533px;
+  margin-left: 62px;
+  padding: 32px 54px 30px 40px;
+}
+.components-right-top .safe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+.components-right-top .safe-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.components-right-top .safe-container p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.components-right-top .safe-container button {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 13px 38px;
+}
+
+.components-right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 98px 60px 40px;
+}
+.components-right-bottom h2 {
+  margin-top: 13px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.components-right-bottom form {
+  margin-top: 35px;
+  width: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.components-right-bottom form input {
+  flex: 1;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #525252;
+  border-radius: 8px;
+  padding: 19px 20px;
+}
+.components-right-bottom form input::placeholder {
+  font-size: 16px;
+}
+.components-right-bottom form button {
+  background-color: #5b73d8;
+  color: inherit;
+  font-size: 18px;
+  padding: 17px 34px 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+.error-msg.active {
+  display: block;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compoenents Dark</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="components-left">
+        <button class="exit-btn">
+          <img src="./img/exit.svg" alt="" srcset="" />
+        </button>
+        <p class="salutations">
+          Hi!
+          <br />
+          One of our consultants will assist you as soon as they can!
+        </p>
+        <form class="chat-form">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <p class="error-msg" id="email-error">
+              Please enter a valid email address
+            </p>
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="input-container">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="3">
+            </textarea>
+            <p class="error-msg" id="message-error">
+              Message must be at least 8 characters
+            </p>
+          </div>
+          <button type="submit">Start chat</button>
+        </form>
+      </div>
+      <div class="components-right">
+        <div class="components-right-top">
+          <img src="./img/safe-logo.svg" alt="" />
+          <div class="safe-container">
+            <h3>Show others that you are safe</h3>
+            <p>
+              If you approve your profile with BankID, you are perceived as a
+              safer person to trade with.
+            </p>
+            <button>Get Started</button>
+          </div>
+        </div>
+        <div class="components-right-bottom">
+          <img src="./img/newsletter.svg" alt="" />
+          <h2>Subscribe to the newsletter</h2>
+          <form class="newsletter-form">
+            <input
+              type="text"
+              name="newsletter-email"
+              id="newsletter-email"
+              placeholder="Enter email address"
+            />
+            <button type="submit">OK</button>
+          </form>
+          <p class="error-msg" id="newsletter-email-error">
+            Please enter a valid email address
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
